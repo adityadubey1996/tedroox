@@ -1,0 +1,216 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="website-background">
+  <h3>We Create Stories That Grill People's Mind</h3>
+  <h5>Adopt Marketing accelerators to evolve your sales</h5>
+  <img src="photo-1454165804606-c3d57bc86b40.jpg">
+
+
+<div class="navbar">
+<div class="icon">
+<img src="Logo orange(80,100).svg" alt="icon" class="icon-main">
+</div>
+<div class="navbar-item">
+    <ul class="list">
+        <li class="dropdown"><a href="#home" class="dropbtn">About us</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+        <li class="dropdown"><a href="#news" class="dropbtn">team</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Services</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="portfolio" class="dropbtn">portfolio</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div></li>
+        <li><button class="button"><span>contact us</span></button></li>
+      </ul>
+      
+</div>
+</div>
+
+</div>
+<div class="slideshow-container">
+<div class="feature fade">
+  <div class="feature-image">
+    <img src="digital-marketing-training-in-bangalore-1200x600.png">
+  </div>
+
+  <div class="feature-description">
+    <h3>Be on top & Get more Traffic to your Website</h3>
+
+    <p>Tedroox stays ahead of the curve with digital marketing trends. Our success has us leading the pack amongst our competitors with our ability to anticipate change and innovation.</p>
+
+
+  </div>
+
+  <div class="feature-image">
+    <img src="Mobile-App.png">
+  </div>
+
+  <div class="feature-description">
+    <h3>Build Idea's into a smart application</h3>
+
+    <p>experienced consultants who breathe with information technology and digital transformation.  </p>
+
+
+  </div>
+
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<div class="services">
+  <br>
+  <h2> Global leader in next-generation digital services and consulting</h2>
+  <div class="header">
+    
+    
+    <div class="services-div-1">
+      <div id="services-desription-1">
+        <h3>Application Development</h3>
+        <p>We bring you powerful idea to navigate your digital transformation. Build application and solution with vital capabilities to deliver digital outcomes.</p>
+
+      </div>
+
+      <div id="services-desription-2">
+        <h3>UI/UX</h3>
+        <p>Embrace the unique and creative design to remain relevant in the future. Deliver world-class user interface and user experience.</p>
+
+      </div>
+
+      <div id="services-desription-3">
+        <h3>Digital Marketing</h3>
+        <p>Adopt the most unique marketing techniques, To accelerate and evolve your way of marketing and sales.</p>
+
+      </div>
+    </div>
+    <div class="services-div-2">
+      <div id="services-desription-4">
+        <h3>Design Studio</h3>
+        <p>Bridge the print and digital marketing with innovative content and creatives to approach your clients.</p>
+      </div>
+
+      <div id="services-desription-5">
+        <h3>Tech support</h3>
+        <p>Navigate your business with the best experience in support, with automated and manual call and mail support.</p>
+
+      </div>
+
+      <div id="services-desription-6">
+        <h3>Research & Analysis </h3>
+        <p>A global leader in next-generation digital services and consulting. Advanced market research and ideation for brand building.</p>
+
+      </div>
+
+      
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="main-icon-footer">
+    <img src="Logo orange(80,100).svg" alt="icon">
+    <p>Tedroox have much planned for the future, working with great clients and continued with digital marketing and software development. If you'd like to join our team, then we'd also love to hear from you.</p>
+  </div>
+  <div class="services-footer">
+    <ul>
+      <li class="serius">Services</li>
+      <li>Search Engine Marketing</li>
+      <li>Search Engine Optimisation</li>
+      <li>Pay Per Click</li>
+      <li>Social Media</li>
+      <li>Technical SEO Audit</li>
+      <li>Content Marketing</li>
+    </ul>
+
+  </div>
+
+  <div class="contacts-footer">
+    <ul>
+      <li class="serius">Contact</li>
+      <li>Corporate office:  #15 Near post office, R.T Nagar Main Road, Bengaluru, 560032.
+        Mail: info@tedroox.com
+        Helpline : +91 80 40958590
+        Phone: +310 421 4945 (USA)
+        Call : 8123 930 957 (IND)</li>
+    </ul>
+
+  </div>
+
+  <div class="symbol">
+
+
+  </div>
+</div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("feature-image");
+  var description = document.getElementsByClassName("feature-description");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < description.length; i++) {
+      description[i].style.display = "none";  
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  description[slideIndex-1].style.display = "block"  
+  
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
